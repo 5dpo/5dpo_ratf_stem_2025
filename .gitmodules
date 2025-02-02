@@ -1,0 +1,3 @@
+[submodule "src/5dpo_ratf_2023"]
+	path = src/5dpo_ratf_2023
+	url = git@github.com:5dpo/5dpo_ratf_2023.git
