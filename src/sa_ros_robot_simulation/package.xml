@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>sa_ros_robot_simulation</name>
+  <version>0.0.0</version>
+  <description>The sa_ros_robot_simulation package</description>
+
+  <maintainer email="jorge.d.ribeiro@inesctec.pt">Jorge D. Ribeiro</maintainer>
+  <license>TODO</license>
+  <author email="jorge.d.ribeiro@inesctec.pt">Jorge D. Ribeiro</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>roscpp</depend>
+  <depend>tf</depend>
+  <depend>geometry_msgs</depend>
+  <depend>sdpo_ros_interfaces_hw</depend>
+
+  <export></export>
+</package>

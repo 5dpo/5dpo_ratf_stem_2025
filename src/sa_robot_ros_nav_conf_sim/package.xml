@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>sa_robot_ros_nav_conf_sim</name>
+  <version>0.0.0</version>
+  <description>The sa_robot_ros_nav_conf_sim package</description>
+
+  <maintainer email="jorge.d.ribeirob@inesctec.pt">Jorge D. Ribeiro</maintainer>
+  <license>TODO</license>
+  <author email="jorge.d.ribeirob@inesctec.pt">Jorge D. Ribeiro</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <export></export>
+</package>

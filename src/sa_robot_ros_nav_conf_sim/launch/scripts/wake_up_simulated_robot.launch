@@ -1,0 +1,28 @@
+<launch>
+  <arg name="robot_id" value="$(optenv ROBOT_ID unnamed_robot)"/>
+
+  <group ns="$(arg robot_id)">
+    <node pkg="sa_ros_nav_controller" type="sa_ros_nav_controller_node"
+        name="sa_ros_nav_controller" clear_params="true"
+        output="$(optenv ROBOT_OUTPUT screen)">
+      <rosparam command="load" subst_value="True"
+          file="$(dirname)/sa_ros_nav_controller.yaml"/>
+    </node>
+    <node pkg="sa_ros_robot_simulation" type="sa_ros_robot_simulation_node"
+        name="sa_ros_robot_simulation" clear_params="true"
+        output="$(optenv ROBOT_OUTPUT screen)">
+      <rosparam command="load" subst_value="True"
+          file="$(dirname)/sa_ros_robot_simulation.yaml"/>
+    </node>
+  </group>
+
+  <node pkg="rviz" type="rviz" name="rviz"
+      args="-d $(dirname)/rviz/rviz.rviz"
+      clear_params="true" output="$(optenv ROBOT_OUTPUT screen)"
+      launch-prefix="bash -c 'sleep 2.0; $0 $@' ">
+  </node>
+
+</launch>
+
+
+        <!-- launch-prefix="bash -c 'sleep 7.0; $0 $@' " -->

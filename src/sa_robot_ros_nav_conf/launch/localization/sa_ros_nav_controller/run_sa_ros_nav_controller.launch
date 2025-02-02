@@ -1,0 +1,13 @@
+<launch>
+  <arg name="robot_id" value="$(optenv ROBOT_ID unnamed_robot)"/>
+
+  <group ns="$(arg robot_id)">
+    <node pkg="sa_ros_nav_controller" type="sa_ros_nav_controller_node"
+        name="sa_ros_nav_controller" clear_params="true"
+        output="$(optenv ROBOT_OUTPUT screen)"
+        launch-prefix="bash -c 'sleep 7.0; $0 $@' ">
+      <rosparam command="load" subst_value="True"
+          file="$(dirname)/sa_ros_nav_controller.yaml"/>
+    </node>
+  </group>
+</launch>

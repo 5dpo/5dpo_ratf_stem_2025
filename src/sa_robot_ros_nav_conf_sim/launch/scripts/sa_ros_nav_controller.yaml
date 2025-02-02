@@ -1,0 +1,2 @@
+map_frame_id: $(arg robot_id)/map
+base_frame_id: $(arg robot_id)/base_footprint

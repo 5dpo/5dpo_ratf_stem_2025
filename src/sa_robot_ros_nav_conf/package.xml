@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>sa_robot_ros_nav_conf</name>
+  <version>0.0.0</version>
+  <description>The sa_robot_ros_nav_conf package</description>
+
+  <maintainer email="jorge.d.ribeirob@inesctec.pt">Jorge D. Ribeiro</maintainer>
+  <license>TODO</license>
+  <author email="jorge.d.ribeirob@inesctec.pt">Jorge D. Ribeiro</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>sdpo_driver_omnijoy</exec_depend>
+  <exec_depend>sdpo_ratf_ros_driver</exec_depend>
+  <exec_depend>sdpo_ros_odom</exec_depend>
+
+  <export></export>
+</package>
